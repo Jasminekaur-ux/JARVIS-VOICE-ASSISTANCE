@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS Voice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Title and Description -->
+        <header>
+            <h1>JARVIS-Style Voice Assistant</h1>
+            <p>Click the button, speak a command, and I will respond.</p>
+        </header>
+
+        <!-- Main Interaction Area -->
+        <main>
+            <div class="mic-container">
+                <button id="micButton" class="mic-button">
+                    <span class="mic-icon">🎙️</span>
+                </button>
+                <p id="statusText">Click to Start Listening</p>
+            </div>
+
+            <div class="output-area">
+                <div class="message user-message">
+                    <span class="label">You said:</span>
+                    <p id="userText">...</p>
+                </div>
+                <div class="message jarvis-message">
+                    <span class="label">JARVIS:</span>
+                    <p id="jarvisText">Awaiting command...</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Command List Reference -->
+        <section class="commands-list">
+            <h3>Try saying:</h3>
+            <ul>
+                <li>"Open Google"</li>
+                <li>"Open YouTube"</li>
+                <li>"What time is it?"</li>
+                <li>"What is the date today?"</li>
+                <li>"Hello JARVIS"</li>
+            </ul>
+        </section>
+        
+        <!-- Browser Support Warning -->
+        <div id="supportWarning" class="hidden">
+            ⚠️ Your browser does not support Speech Recognition. Please use Google Chrome.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
