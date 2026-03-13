@@ -30,6 +30,8 @@ Standard libraries like datetime, os, subprocess, and webbrowser for system inte
 If your repository uses any additional frameworks (e.g., GUI, web dashboard, or external APIs), list them in requirements.txt and they will automatically be documented here.
 ​
 Project Structure (Example)
+
+
 JARVIS-VOICE-ASSISTANCE/
 ├── main.py              Entry point for running JARVIS
 ├── jarvis/              Core assistant package (if modularized)
